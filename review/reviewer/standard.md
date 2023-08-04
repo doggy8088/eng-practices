@@ -141,7 +141,7 @@ just trying to resolve the conflict through code review comments. (If you do
 this, though, make sure to record the results of the discussion as a comment on
 the CL, for future readers.)
 
-如果那無法解決情況，最常見的解決辦法是進行升級。通常的升級路徑是進行更廣泛的團隊討論，讓技術領導發表意見，從程式碼維護者那裡獲取決策，或請求工程經理的幫助。不要讓程式碼審查因為作者和審查者無法達成一致而拖延。
+如果那無法解決情況，最常見的解決辦法是進行升級。通常的升級路徑是進行更廣泛的團隊討論，讓技術領導發表意見，從程式碼維護者那裡獲取決策，或請求工程經理的幫助。**不要讓程式碼審查因為作者和審查者無法達成一致而拖延。**
 
 If that doesn't resolve the situation, the most common way to resolve it would
 be to escalate. Often the
