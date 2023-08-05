@@ -17,6 +17,10 @@ Google has many generalized engineering practices that cover all languages and a
 * **CL**：代表 "changelist"，意思是已提交到版本控制或正在進行程式碼審查的獨立修改。其他組織通常稱之為 "change"、"patch" 或 "pull-request"。
 * **LGTM**：意思是 "Looks Good to Me"，這是程式碼審查者在核准 CL 時所說的話。
 
+## 正體中文翻譯
+
+本書正體中文翻譯由 [Will 保哥](https://blog.miniasp.com/) 完成，原文取自 [Google Engineering Practices Documentation](https://github.com/google/eng-practices)。若有任何問題，歡迎造訪 [Will 保哥的技術交流中心](https://www.facebook.com/will.fans) 與我聯繫！
+
 ## 授權 (License)
 
 該專案中的文件根據 [CC-By 3.0 授權](LICENSE)進行授權，該授權鼓勵您分享這些文件。有關詳細資訊，請參閱<https://creativecommons.org/licenses/by/3.0/>。
