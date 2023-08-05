@@ -8,7 +8,7 @@ possible.
 
 ## 什麼是緊急情況？ (What Is An Emergency?) {#what}
 
-緊急程式庫 (CL) 將是一個「小」更改，允許主要的發佈繼續進行而不會復原，修復影響使用者產生重大影響的錯誤，在生產環境中處理迫切的法律問題，關閉主要的安全漏洞等。
+緊急 CL 將是一個「小」更改，允許主要的發佈繼續進行而不會復原，修復影響使用者產生重大影響的錯誤，在生產環境中處理迫切的法律問題，關閉主要的安全漏洞等。
 
 An emergency CL would be a **small** change that: allows a major launch to
 continue instead of rolling back, fixes a bug significantly affecting users in
