@@ -53,7 +53,7 @@ review (if needed) within a single day.
 
 ## 速度 vs. 中斷 (Speed vs. Interruption) {#中斷}
 
-有一個情況，個人速度比團隊速度更重要。**如果你正在進行一個專注的任務，例如編寫程式碼，不要中斷自己來進行程式碼審查。**研究表明，開發人員在被打斷後重新進入順暢的開發流程可能需要很長時間。因此，打斷自己編碼實際上比讓另一個開發人員等待一段時間進行程式碼審查*更*貴重。
+有一個情況，個人速度比團隊速度更重要。**如果你正在進行一個專注的任務，例如編寫程式碼，不要中斷自己來進行程式碼審查。**研究表明，開發人員在被打斷後重新進入順暢的開發流程可能需要很長時間。因此，打斷自己撰寫程式碼實際上比讓另一個開發人員等待一段時間進行程式碼審查*更*貴重。
 
 There is one time where the consideration of personal velocity trumps team
 velocity. **If you are in the middle of a focused task, such as writing code,
@@ -64,7 +64,7 @@ after being interrupted. So interrupting yourself while coding is actually
 *more* expensive to the team than making another developer wait a bit for a code
 review.
 
-相反的，等待你工作的斷點再回應請求進行審查。斷點可能是你目前的編碼任務完成後、午餐後、從會議回來後或是從休息室回來後等等。
+相反的，等待你工作的斷點再回應請求進行審查。斷點可能是你目前的撰寫程式碼任務完成後、午餐後、從會議回來後或是從休息室回來後等等。
 
 Instead, wait for a break point in your work before you respond to a request for
 review. This could be when your current coding task is completed, after lunch,
