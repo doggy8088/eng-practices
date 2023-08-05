@@ -57,7 +57,7 @@ the best approach. If there are any shortcomings to the approach, they should be
 mentioned. If relevant, include background information such as bug numbers,
 benchmark results, and links to design documents.
 
-如果您包含外部資源的連結，要考慮到因存取限制或保留政策，這些連結可能對未來讀者不可見。在可能的情況下，請提供足夠的上下文讓審閱者和未來的讀者理解程式碼。
+如果您包含外部資源的連結，要考慮到因存取限制或保留政策，這些連結可能對未來讀者不可見。在可能的情況下，請提供足夠的上下文讓審查者和未來的讀者理解程式碼。
 
 If you include links to external resources consider that they may not be visible
 to future readers due to access restrictions or retention policies. Where
@@ -176,7 +176,7 @@ Example:
 > instead of Python2, and significantly simplifies some automated build file
 > refactoring tools being worked on currently.
 
-第一句話描述實際正在做什麼。其餘的描述解釋了為什麼要進行更改，並為審查人員提供了很多背景。
+第一句話描述實際正在做什麼。其餘的描述解釋了為什麼要進行更改，並為審查者提供了很多背景。
 
 The first sentence describes what's actually being done. The rest of the
 description explains *why* the change is being made and gives the reviewer a lot

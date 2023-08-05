@@ -96,7 +96,7 @@ suggest other reviewers who might be able to respond more quickly, or
 you should interrupt coding even to send a response like this&mdash;send the
 response at a reasonable break point in your work.)
 
-重要的是，評審花足夠的時間進行評審，以確保他們的 "LGTM" 意味著 "這個程式碼符合[我們的標準](standard.md)"。然而，個別回應仍然理想的應是[快速的](#fast)。
+重要的是，審查者花足夠的時間進行審查，以確保他們的 "LGTM" 意味著 "這個程式碼符合[我們的標準](standard.md)"。然而，個別回應仍然理想的應是[快速的](#fast)。
 
 **It is important that reviewers spend enough time on review that they are
 certain their "LGTM" means "this code meets [our standards](standard.md)."**
@@ -132,7 +132,7 @@ comments on the CL. This is done when either:
 The reviewer should specify which of these options they intend, if it is not
 otherwise clear.
 
-當開發者得到 "LGTM, Approval" 需要等待整整一天時，LGTM 帶有評論的功能尤其值得考慮，特別是當開發者和評審人員位於不同的時區時。
+當開發者得到 "LGTM, Approval" 需要等待整整一天時，LGTM 帶有評論的功能尤其值得考慮，特別是當開發者和審查者位於不同的時區時。
 
 LGTM With Comments is especially worth considering when the developer and
 reviewer are in different time zones and otherwise the developer would be
@@ -150,7 +150,7 @@ each other, instead of one huge CL that has to be reviewed all at once. This is
 usually possible and very helpful to reviewers, even if it takes additional work
 from the developer.
 
-如果一個 CL 不能被分成更小的 CL，而且你沒有時間快速檢閱整個 CL，那麼至少對 CL 的整體設計寫一些註解，並將其送回開發人員進行改進。作為審查人員，你的目標之一應該是始終讓開發人員解除障礙或使他們能夠快速進行某些進一步的操作，而不犧牲程式碼的健康狀態。
+如果一個 CL 不能被分成更小的 CL，而且你沒有時間快速檢閱整個 CL，那麼至少對 CL 的整體設計寫一些註解，並將其送回開發人員進行改進。作為審查者，你的目標之一應該是始終讓開發人員解除障礙或使他們能夠快速進行某些進一步的操作，而不犧牲程式碼的健康狀態。
 
 If a CL *can't* be broken up into smaller CLs, and you don't have time to review
 the entire thing quickly, then at least write some comments on the overall
@@ -161,7 +161,7 @@ so.
 
 ## 逐漸改善的程式碼審查 (Code Review Improvements Over Time) {#time}
 
-如果你遵循這些準則，並且在程式碼審查方面嚴格要求自己，你會發現整個程式碼審查過程隨著時間的推移越來越快。開發人員會學習有關代碼健康所需的標準，並向您傳送從一開始就很出色的 CL，需要越來越少的審查時間。審查人員學會了快速響應，並使審查過程不增加不必要的延遲。但是，請不要為了加快速度而妥協於[程式碼審查標準](standard.md)或質量的虛幻改善。長遠來看，這實際上並不會使任何事情發生得更快。
+如果你遵循這些準則，並且在程式碼審查方面嚴格要求自己，你會發現整個程式碼審查過程隨著時間的推移越來越快。開發人員會學習有關代碼健康所需的標準，並向您傳送從一開始就很出色的 CL，需要越來越少的審查時間。審查者學會了快速響應，並使審查過程不增加不必要的延遲。但是，請不要為了加快速度而妥協於[程式碼審查標準](standard.md)或質量的虛幻改善。長遠來看，這實際上並不會使任何事情發生得更快。
 
 If you follow these guidelines and you are strict with your code reviews, you
 should find that the entire code review process tends to go faster and faster

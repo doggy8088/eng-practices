@@ -34,7 +34,7 @@ However, we're actually going in the direction of removing the FooWidget system
 that you're modifying here, and so we don't want to make any new modifications
 to it right now. How about instead you refactor our new BarWidget class?"
 
-請注意，審查人員不僅拒絕了目前的 CL，並提供了一個替代建議，而且他們用了 *有禮貌的* 方式。這種禮貌是重要的，因為我們希望展現即使意見不同，我們也尊重彼此身為開發人員的事實。
+請注意，審查者不僅拒絕了目前的 CL，並提供了一個替代建議，而且他們用了 *有禮貌的* 方式。這種禮貌是重要的，因為我們希望展現即使意見不同，我們也尊重彼此身為開發人員的事實。
 
 Note that not only did the reviewer reject the current CL and provide an
 alternative suggestion, but they did it *courteously*. This kind of courtesy is

@@ -32,7 +32,7 @@ thinking about edge cases, looking for concurrency problems, trying to think
 like a user, and making sure that there are no bugs that you see just by reading
 the code.
 
-如果需要的話，您可以驗證變更清單（CL） - 當 CL 產生使用者端影響（例如 UI 變更）時，審閱者檢查 CL 行為是最重要的時候。當您只是閱讀程式碼時，很難理解一些變更會如何影響使用者。對於這樣的更改，如果在 CL 中套用和自行測試太麻煩，您可以要求開發人員向您展示功能的示範。
+如果需要的話，您可以驗證變更清單（CL） - 當 CL 產生使用者端影響（例如 UI 變更）時，審查者檢查 CL 行為是最重要的時候。當您只是閱讀程式碼時，很難理解一些變更會如何影響使用者。對於這樣的更改，如果在 CL 中套用和自行測試太麻煩，您可以要求開發人員向您展示功能的示範。
 
 You *can* validate the CL if you want—the time when it's most important for a
 reviewer to check a CL's behavior is when it has a user-facing impact, such as a
@@ -41,7 +41,7 @@ you're just reading the code. For changes like that, you can have the developer
 give you a demo of the functionality if it's too inconvenient to patch in the CL
 and try it yourself.
 
-另一個需要在程式碼審查中特別考慮功能性的時間是，如果在 CL 中存在某種**並行程式設計**，理論上可能會導致死鎖或競態條件。這些問題通常很難僅透過運行代碼就檢測到，通常需要開發人員和審查人員仔細思考，以確保沒有引入問題。(請注意，這也是不使用可能存在競態條件或死鎖的並發模型的一個很好的理由 - 它可能會使代碼審查或理解程式碼變得非常複雜。)
+另一個需要在程式碼審查中特別考慮功能性的時間是，如果在 CL 中存在某種**並行程式設計**，理論上可能會導致死鎖或競態條件。這些問題通常很難僅透過運行代碼就檢測到，通常需要開發人員和審查者仔細思考，以確保沒有引入問題。(請注意，這也是不使用可能存在競態條件或死鎖的並發模型的一個很好的理由 - 它可能會使代碼審查或理解程式碼變得非常複雜。)
 
 Another time when it's particularly important to think about functionality
 during a code review is if there is some sort of **parallel programming** going
@@ -63,7 +63,7 @@ complex? "Too complex" usually means **"can't be understood quickly by code
 readers."** It can also mean **"developers are likely to introduce bugs when
 they try to call or modify this code."**
 
-一種特定的複雜度是**過度設計**，開發人員使代碼更通用，或新增系統目前不需要的功能。評審者應特別注意過度工程。鼓勵開發人員解決他們現在知道需要解決的問題，而不是開發人員推測*未來*可能需要解決的問題。未來的問題應該在它到來並且您可以在物理宇宙中看到其實際形狀和要求時解決。
+一種特定的複雜度是**過度設計**，開發人員使代碼更通用，或新增系統目前不需要的功能。審查者應特別注意過度工程。鼓勵開發人員解決他們現在知道需要解決的問題，而不是開發人員推測*未來*可能需要解決的問題。未來的問題應該在它到來並且您可以在物理宇宙中看到其實際形狀和要求時解決。
 
 A particular type of complexity is **over-engineering**, where developers have
 made the code more generic than it needs to be, or added functionality that
@@ -218,7 +218,7 @@ code, it's very likely that other developers won't either. So you're also
 helping future developers understand this code, when you ask the developer to
 clarify it.
 
-如果你瞭解程式碼，但是你覺得自己不太適合評審某部分，確保讓這個 CL 有合格的評審(參考 : #every-line-exceptions)，尤其是針對隱私、安全性、併發性、可訪問性、國際化等複雜問題。
+如果你瞭解程式碼，但是你覺得自己不太適合審查某部分，確保讓這個 CL 有合格的審查者(參考 : #every-line-exceptions)，尤其是針對隱私、安全性、併發性、可訪問性、國際化等複雜問題。
 
 If you understand the code but you don't feel qualified to do some part of the
 review, [make sure there is a reviewer](#every-line-exceptions) on the CL who is
@@ -227,7 +227,7 @@ concurrency, accessibility, internationalization, etc.
 
 ### 例外情況 (Exceptions) {#every-line-exceptions}
 
-如果你需要檢查每一行，但這對你來說不合理，該怎麼辦呢？例如，在變更清單上有多個審查人員，你可能會被要求：
+如果你需要檢查每一行，但這對你來說不合理，該怎麼辦呢？例如，在變更清單上有多個審查者，你可能會被要求：
 
 * 檢視屬於較大變更的某些檔案。
 * 檢視變更中的某些方面，例如高層次設計、隱私或安全影響等。
@@ -244,7 +244,7 @@ one of multiple reviewers on a CL and may be asked:
 In these cases, note in a comment which parts you reviewed. Prefer giving
 [LGTM with comments](speed.md#lgtm-with-comments).
 
-如果您希望在確認其他評審已經檢查完變更清單的其他部分後給予 LGTM，請在評論中明確註明以設定期望。一旦變更清單達到所需狀態，請[快速回應](speed.md#responses)。
+如果您希望在確認其他審查者已經檢查完變更清單的其他部分後給予 LGTM，請在評論中明確註明以設定期望。一旦變更清單達到所需狀態，請[快速回應](speed.md#responses)。
 
 If you instead wish to grant LGTM after confirming that other reviewers have
 reviewed other parts of the CL, note this explicitly in a comment to set
