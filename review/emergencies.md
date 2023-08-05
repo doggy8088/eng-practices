@@ -8,13 +8,13 @@ possible.
 
 ## 什麼是緊急情況？ (What Is An Emergency?) {#what}
 
-緊急程式庫 (CL) 將是一個「小」更改，允許主要的發佈繼續進行而不會復原，修復影響使用者產生重大影響的錯誤，在生產環境中處理迫切的法律問題，關閉主要的安全漏洞等。
+緊急 CL 將是一個「小」更改，允許主要的發佈繼續進行而不會復原，修復影響使用者產生重大影響的錯誤，在生產環境中處理迫切的法律問題，關閉主要的安全漏洞等。
 
 An emergency CL would be a **small** change that: allows a major launch to
 continue instead of rolling back, fixes a bug significantly affecting users in
 production, handles a pressing legal issue, closes a major security hole, etc.
 
-在緊急情況下，我們真的關心整個程式碼審查過程的速度，而不僅僅是[回覆速度](reviewer/speed.md)。在這種情況下，專家應更關心審查的速度和程式碼的正確性（它是否真正解決了緊急情況？），而不是其他任何事情。此外（很明顯地），當這些問題出現時，此類檢討應優先於所有其他程式碼檢討。
+在緊急情況下，我們真的關心整個程式碼審查過程的速度，而不僅僅是[回覆速度](reviewer/speed.md)。在這種情況下，審查者應更關心審查的速度和程式碼的正確性（它是否真正解決了緊急情況？），而不是其他任何事情。此外（很明顯地），當這些問題出現時，此類檢討應優先於所有其他程式碼檢討。
 
 In emergencies we really do care about the speed of the entire code review
 process, not just the [speed of response](reviewer/speed.md). In this case

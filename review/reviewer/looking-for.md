@@ -32,7 +32,7 @@ thinking about edge cases, looking for concurrency problems, trying to think
 like a user, and making sure that there are no bugs that you see just by reading
 the code.
 
-如果需要的話，您可以驗證變更清單（CL） - 當 CL 產生使用者端影響（例如 UI 變更）時，審閱者檢查 CL 行為是最重要的時候。當您只是閱讀程式碼時，很難理解一些變更會如何影響使用者。對於這樣的更改，如果在 CL 中套用和自行測試太麻煩，您可以要求開發人員向您展示功能的示範。
+如果需要的話，您可以驗證變更清單（CL） - 當 CL 產生使用者端影響（例如 UI 變更）時，審查者檢查 CL 行為是最重要的時候。當您只是閱讀程式碼時，很難理解一些變更會如何影響使用者。對於這樣的更改，如果在 CL 中套用和自行測試太麻煩，您可以要求開發人員向您展示功能的示範。
 
 You *can* validate the CL if you want—the time when it's most important for a
 reviewer to check a CL's behavior is when it has a user-facing impact, such as a
@@ -218,7 +218,7 @@ code, it's very likely that other developers won't either. So you're also
 helping future developers understand this code, when you ask the developer to
 clarify it.
 
-如果你瞭解程式碼，但是你覺得自己不太適合評審某部分，確保讓這個 CL 有合格的評審(參考 : #every-line-exceptions)，尤其是針對隱私、安全性、併發性、可訪問性、國際化等複雜問題。
+如果你瞭解程式碼，但是你覺得自己不太適合審查某部分，確保讓這個 CL 有合格的審查者(參考 : #every-line-exceptions)，尤其是針對隱私、安全性、併發性、可訪問性、國際化等複雜問題。
 
 If you understand the code but you don't feel qualified to do some part of the
 review, [make sure there is a reviewer](#every-line-exceptions) on the CL who is
@@ -227,7 +227,7 @@ concurrency, accessibility, internationalization, etc.
 
 ### 例外情況 (Exceptions) {#every-line-exceptions}
 
-如果你需要檢查每一行，但這對你來說不合理，該怎麼辦呢？例如，在變更清單上有多個審查人員，你可能會被要求：
+如果你需要檢查每一行，但這對你來說不合理，該怎麼辦呢？例如，在變更清單上有多個審查者，你可能會被要求：
 
 * 檢視屬於較大變更的某些檔案。
 * 檢視變更中的某些方面，例如高層次設計、隱私或安全影響等。
@@ -244,7 +244,7 @@ one of multiple reviewers on a CL and may be asked:
 In these cases, note in a comment which parts you reviewed. Prefer giving
 [LGTM with comments](speed.md#lgtm-with-comments).
 
-如果您希望在確認其他評審已經檢查完變更清單的其他部分後給予 LGTM，請在評論中明確註明以設定期望。一旦變更清單達到所需狀態，請[快速回應](speed.md#responses)。
+如果您希望在確認其他審查者已經檢查完變更清單的其他部分後給予 LGTM，請在評論中明確註明以設定期望。一旦變更清單達到所需狀態，請[快速回應](speed.md#responses)。
 
 If you instead wish to grant LGTM after confirming that other reviewers have
 reviewed other parts of the CL, note this explicitly in a comment to set

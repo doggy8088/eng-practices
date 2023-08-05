@@ -38,13 +38,13 @@ Code reviews should look at:
 
 請檢視 **[如何進行程式碼審查 (How To Do A Code Review)](reviewer/index.md)** 以瞭解更多資訊。
 
-### 選擇最佳評論者 (Picking the Best Reviewers) {#best_reviewers}
+### 選擇最佳審查者 (Picking the Best Reviewers) {#best_reviewers}
 
 一般來說，您會想尋找能夠在合理的時間內回覆您的評論的 *最佳* 審查者。
 
 In general, you want to find the *best* reviewers you can who are capable of responding to your review within a reasonable period of time.
 
-最好的評論者是那些能夠為你撰寫的程式碼提供最全面且正確的評論的人。這通常意味著程式碼的所有者，他們可能是 `OWNERS` 文件中的人，也可能不是。有時這意味著要求不同的人審查 CL 中的不同部分。
+最好的審查者是那些能夠為你撰寫的程式碼提供最全面且正確的評論的人。這通常意味著程式碼的所有者，他們可能是 `OWNERS` 文件中的人，也可能不是。有時這意味著要求不同的人審查 CL 中的不同部分。
 
 The best reviewer is the person who will be able to give you the most thorough and correct review for the piece of code you are writing. This usually means the owner(s) of the code, who may or may not be the people in the OWNERS file. Sometimes this means asking different people to review different parts of the CL.
 
@@ -59,11 +59,11 @@ If you find an ideal reviewer but they are not available, you should at least CC
 
 If you pair-programmed a piece of code with somebody who was qualified to do a good code review on it, then that code is considered reviewed.
 
-您也可以進行面對面的程式碼審查，其中審查人員提問，而變更的開發人員則在被問到時才發言。
+您也可以進行面對面的程式碼審查，其中審查者提問，而變更的開發人員則在被問到時才發言。
 
 You can also do in-person code reviews where the reviewer asks questions and the developer of the change speaks only when spoken to.
 
 ## 參見 (See Also) {#seealso}
 
-- [如何進行程式碼審查 (How To Do A Code Review)](reviewer/index.md)：針對程式碼審查人員的詳細指南。
+- [如何進行程式碼審查 (How To Do A Code Review)](reviewer/index.md)：針對程式碼審查者的詳細指南。
 - [程式碼審查作者指南 (The CL Author's Guide)](developer/index.md)：針對經歷審查的開發人員的詳細指南。

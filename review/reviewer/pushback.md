@@ -16,14 +16,14 @@ they might really have a better insight about certain aspects of it. Does their
 argument make sense? Does it make sense from a code health perspective? If so,
 let them know that they are right and let the issue drop.
 
-然而，開發人員並非一直正確無誤。在這種情況下，審查人員應進一步解釋為什麼他們認為自己的建議是正確的。一個好的解釋應該展現審查人員對開發人員回覆的理解以及為什麼進行變更的額外資訊。
+然而，開發人員並非一直正確無誤。在這種情況下，審查者應進一步解釋為什麼他們認為自己的建議是正確的。一個好的解釋應該展現審查者對開發人員回覆的理解以及為什麼進行變更的額外資訊。
 
 However, developers are not always right. In this case the reviewer should
 further explain why they believe that their suggestion is correct. A good
 explanation demonstrates both an understanding of the developer's reply, and
 additional information about why the change is being requested.
 
-特別是當審查人員相信他們的建議能夠改進程式碼健康度時，如果他們認為由於改變而產生的程式碼品質提高可以證明額外的工作是有價值的，他們應繼續支援這項更改。**改善程式碼健康度往往是透過一小步實現的。**
+特別是當審查者相信他們的建議能夠改進程式碼健康度時，如果他們認為由於改變而產生的程式碼品質提高可以證明額外的工作是有價值的，他們應繼續支援這項更改。**改善程式碼健康度往往是透過一小步實現的。**
 
 In particular, when the reviewer believes their suggestion will improve code
 health, they should continue to advocate for the change, if they believe the

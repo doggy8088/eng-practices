@@ -4,13 +4,13 @@
 
 小而簡單的變更清單是：
 
-- **更快地進行審查。** 審查人員比將 30 分鐘專門用於審查一個大的 CL，更容易找到數次 5 分鐘來審查小的 CL。
-- **更仔細地進行審查。** 對於大的變更，審查人員和作者往往會因為大量的詳細評論來回移位而感到沮喪，有時甚至會錯過或忽略重要點。
-- **較不容易引入錯誤。** 由於進行較少的變更，您和審查人員可以更容易地有效推理 CL 的影響並確認是否引入了錯誤。
-- **在被拒絕時減少浪費的工作。** 如果您編寫了一個龐大的 CL，然後您的審查人員說整個方向錯了，那麼您就浪費了很多工作。
+- **更快地進行審查。** 審查者比將 30 分鐘專門用於審查一個大的 CL，更容易找到數次 5 分鐘來審查小的 CL。
+- **更仔細地進行審查。** 對於大的變更，審查者和作者往往會因為大量的詳細評論來回移位而感到沮喪，有時甚至會錯過或忽略重要點。
+- **較不容易引入錯誤。** 由於進行較少的變更，您和審查者可以更容易地有效推理 CL 的影響並確認是否引入了錯誤。
+- **在被拒絕時減少浪費的工作。** 如果您編寫了一個龐大的 CL，然後您的審查者說整個方向錯了，那麼您就浪費了很多工作。
 - **更容易合併。** 在大的 CL 上工作需要很長時間，因此當您進行合併操作時會遇到很多衝突，而且您還需要經常進行合併。
 - **更方便設計。** 改進小的變更的設計和程式碼更容易，而詳細修改大變更的所有細節要更困難。
-- **在審查時的阻礙更少。** 傳送自包含的整個變更的部分可以讓您在等待當前 CL 審查時繼續編碼。
+- **在審查時的阻礙更少。** 傳送自包含的整個變更的部分可以讓您在等待當前 CL 審查時繼續撰寫程式碼。
 - **還原更簡單。** 大的 CL 將更有可能觸及在初始 CL 提交和復原 CL 之間被更新的檔案，從而使復原變得更加複雜 (中間的 CL 可能也需要復原)。
 
 Small, simple CLs are:
@@ -24,7 +24,7 @@ Small, simple CLs are:
 - **Less blocking on reviews.** Sending self-contained portions of your overall change allows you to continue coding while you wait for your current CL in review.
 - **Simpler to roll back.** A large CL will more likely touch files that get updated between the initial CL submission and a rollback CL, complicating the rollback (the intermediate CLs will probably need to be rolled back too).
 
-請注意，**評審有權因變更過於龐大而直接拒絕您的變更。**通常他們會感謝您的貢獻，但要求您將其拆成一系列較小的變更。在您已經編寫變更之後，將其拆分可能需要很多工作，或需要花費很多時間爭論評審員為什麼要接受您的大型變更。在最初就編寫小的變更會更容易。
+請注意，**審查者有權因變更過於龐大而直接拒絕您的變更。**通常他們會感謝您的貢獻，但要求您將其拆成一系列較小的變更。在您已經編寫變更之後，將其拆分可能需要很多工作，或需要花費很多時間爭論審查者為什麼要接受您的大型變更。在最初就編寫小的變更會更容易。
 
 Note that **reviewers have discretion to reject your change outright for the sole reason of it being too large.** Usually they will thank you for your contribution but request that you somehow make it into a series of smaller changes. It can be a lot of work to split up a change after you've already written it, or require lots of time arguing about why the reviewer should accept your large change. It's easier to just write small CLs in the first place.
 
@@ -32,11 +32,11 @@ Note that **reviewers have discretion to reject your change outright for the sol
 
 通常而言，對於 CL (程式碼變更清單) 來說，**適當的大小為一項自包含的改變**。這代表：
 
-- CL 的變更應該只針對一件事情，這通常只是一個功能的一部分，而不是整個功能。通常，相較於太大的 CL，寫較小的 CL 會更好一些。與您的審查人員合作找出可以接受的大小。
+- CL 的變更應該只針對一件事情，這通常只是一個功能的一部分，而不是整個功能。通常，相較於太大的 CL，寫較小的 CL 會更好一些。與您的審查者合作找出可以接受的大小。
 - CL 應[包含相關的測試程式碼](#test_code)。
-- 審查人員需要瞭解 CL 的一切(除了未來的開發)是在 CL 本身、CL 的描述、現有的程式碼函式庫或他們已經檢查過的 CL 中。
+- 審查者需要瞭解 CL 的一切(除了未來的開發)是在 CL 本身、CL 的描述、現有的程式碼函式庫或他們已經檢查過的 CL 中。
 - 在 CL 審查後系統將繼續為使用者和開發人員提供良好的功能。
-- CL 的規模不應該太小，其影響難以理解。如果您新增了一個 API，應在同一個 CL 中包含 API 的用法，以便審查人員更好地理解 API 的使用方式。這也可以避免未使用的 API 納入檢查。
+- CL 的規模不應該太小，其影響難以理解。如果您新增了一個 API，應在同一個 CL 中包含 API 的用法，以便審查者更好地理解 API 的使用方式。這也可以避免未使用的 API 納入檢查。
 
 In general, the right size for a CL is **one self-contained change**. This means that:
 
@@ -64,7 +64,7 @@ it's up to the judgment of your reviewer. The number of files that a change is
 spread across also affects its "size." A 200-line change in one file might be
 okay, but spread across 50 files it would usually be too large.
 
-請記得，雖然你從寫程式碼最開始就參與其中，但審查人員常常沒有上下文。對你而言，看起來尺寸合適的程式碼審查可能對審查者來說是難以負荷的。當你不確定時，給審查人員的 CL 應比你認為需要寫的還要小。很少有審查人員會抱怨 CL 太小。
+請記得，雖然你從寫程式碼最開始就參與其中，但審查者常常沒有上下文。對你而言，看起來尺寸合適的程式碼審查可能對審查者來說是難以負荷的。當你不確定時，給審查者的 CL 應比你認為需要寫的還要小。很少有審查者會抱怨 CL 太小。
 
 Keep in mind that although you have been intimately involved with your code from
 the moment you started to write it, the reviewer often has no context. What
@@ -76,8 +76,8 @@ Reviewers rarely complain about getting CLs that are too small.
 
 有一些情況下，大幅度的變更沒有那麼糟糕：
 
-- 通常情況下，刪除整個檔案被視為一行變更，因為審查人員並不需要花太長時間進行審查。
-- 有時候大型 CL 是由完全信任的自動重構工具產生的，審查人員的工作只是驗證並確定他們確實想要進行變更。這樣的 CL 可能會更大，儘管上面提到的一些注意事項（例如合併和測試）仍然適用。
+- 通常情況下，刪除整個檔案被視為一行變更，因為審查者並不需要花太長時間進行審查。
+- 有時候大型 CL 是由完全信任的自動重構工具產生的，審查者的工作只是驗證並確定他們確實想要進行變更。這樣的 CL 可能會更大，儘管上面提到的一些注意事項（例如合併和測試）仍然適用。
 
 There are a few situations in which large changes aren't as bad:
 
@@ -90,7 +90,7 @@ There are a few situations in which large changes aren't as bad:
 
 ## 高效撰寫小型 CL (Writing Small CLs Efficiently) {#efficiently}
 
-如果您撰寫了一個小 CL，然後等待您的審查人員批准它，然後再撰寫下一個 CL，那麼您將浪費很多時間。因此，您希望找到某種不會在等待審查時阻礙您工作的方式。這可能包括同時進行多個項目的工作、找到同意立即提供幫助的審查人員、進行面對面的審查、進行配對程式設計或按照某種方式分割您的 CL，以使您可以立即繼續工作。
+如果您撰寫了一個小 CL，然後等待您的審查者批准它，然後再撰寫下一個 CL，那麼您將浪費很多時間。因此，您希望找到某種不會在等待審查時阻礙您工作的方式。這可能包括同時進行多個項目的工作、找到同意立即提供幫助的審查者、進行面對面的審查、進行配對程式設計或按照某種方式分割您的 CL，以使您可以立即繼續工作。
 
 If you write a small CL and then you wait for your reviewer to approve it before
 you write your next CL, then you're going to waste a lot of time. So you want to
@@ -102,7 +102,7 @@ immediately.
 
 ## 分割 CLs (Splitting CLs) {#splitting}
 
-當要處理具有潛在相依關係的多個 CL 工作時，通常在開始編碼之前，先從高層次考慮如何分割和組織這些 CL 會很有幫助。
+當要處理具有潛在相依關係的多個 CL 工作時，通常在開始撰寫程式碼之前，先從高層次考慮如何分割和組織這些 CL 會很有幫助。
 
 When starting work that will have multiple CLs with potential dependencies among
 each other, it's often useful to think about how to split and organize those CLs
@@ -128,7 +128,7 @@ the first CL. Most version control systems allow you to do this somehow.
 
 ### 依檔案拆分 (Splitting by Files) {#splitting-files}
 
-將 CL (變更清單) 拆分的另一種方法是將檔案分組成需要不同審查人員但本身是獨立變更的內容。
+將 CL (變更清單) 拆分的另一種方法是將檔案分組成需要不同審查者但本身是獨立變更的內容。
 
 Another way to split up a CL is by groupings of files that will require
 different reviewers but are otherwise self-contained changes.
@@ -207,14 +207,14 @@ Starting from the model (at the bottom) and working up to the client:
 
 ## 區分重構 (Separate Out Refactorings) {#refactoring}
 
-通常最好將重構與功能變更或錯誤修復分成不同的確認清單(CL)。例如，移動和重新命名類別應該在不同的 CL 中，不同於修復該類別中的錯誤。當它們是分開的時候，對於審閱者來說更容易理解每個 CL 引入的變更。
+通常最好將重構與功能變更或錯誤修復分成不同的確認清單(CL)。例如，移動和重新命名類別應該在不同的 CL 中，不同於修復該類別中的錯誤。當它們是分開的時候，對於審查者來說更容易理解每個 CL 引入的變更。
 
 It's usually best to do refactorings in a separate CL from feature changes or
 bug fixes. For example, moving and renaming a class should be in a different CL
 from fixing a bug in that class. It is much easier for reviewers to understand
 the changes introduced by each CL when they are separate.
 
-小的清理工作，例如修正本地變數的名稱，可以包含在功能變更或錯誤修正程式碼變更列表中。然而，如果重構的範圍太大，會導致目前程式碼變更列表的審查變得更加困難，那麼這就取決於開發人員和審查人員的判斷了。
+小的清理工作，例如修正本地變數的名稱，可以包含在功能變更或錯誤修正程式碼變更列表中。然而，如果重構的範圍太大，會導致目前程式碼變更列表的審查變得更加困難，那麼這就取決於開發人員和審查者的判斷了。
 
 Small cleanups such as fixing a local variable name can be included inside of a
 feature change or bug fix CL, though. It's up to the judgment of developers and
@@ -282,7 +282,7 @@ CL could pave the way for a cleaner implementation. Talk to your teammates and
 see if anybody has thoughts on how to implement the functionality in small CLs
 instead.
 
-如果所有這些選項失敗（這應該是非常罕見的情況），請事先獲得審閱人的同意來審閱大型 CL，因此他們將會被警告即將到來的事情。在這種情況下，預計要花很長時間進行審查，要特別注意不引入錯誤並勤於編寫測試。
+如果所有這些選項失敗（這應該是非常罕見的情況），請事先獲得審查者的同意來審閱大型 CL，因此他們將會被警告即將到來的事情。在這種情況下，預計要花很長時間進行審查，要特別注意不引入錯誤並勤於編寫測試。
 
 If all of these options fail (which should be extremely rare) then get consent
 from your reviewers in advance to review a large CL, so they are warned about
@@ -290,4 +290,4 @@ what is coming. In this situation, expect to be going through the review process
 for a long time, be vigilant about not introducing bugs, and be extra diligent
 about writing tests.
 
-接下來: [如何處理評審意見 (How to Handle Reviewer Comments)](handling-comments.md)
+接下來: [如何處理審查者意見 (How to Handle Reviewer Comments)](handling-comments.md)

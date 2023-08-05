@@ -53,7 +53,7 @@ review (if needed) within a single day.
 
 ## 速度 vs. 中斷 (Speed vs. Interruption) {#中斷}
 
-有一個情況，個人速度比團隊速度更重要。**如果你正在進行一個專注的任務，例如編寫程式碼，不要中斷自己來進行程式碼審查。**研究表明，開發人員在被打斷後重新進入順暢的開發流程可能需要很長時間。因此，打斷自己編碼實際上比讓另一個開發人員等待一段時間進行程式碼審查*更*貴重。
+有一個情況，個人速度比團隊速度更重要。**如果你正在進行一個專注的任務，例如編寫程式碼，不要中斷自己來進行程式碼審查。**研究表明，開發人員在被打斷後重新進入順暢的開發流程可能需要很長時間。因此，打斷自己撰寫程式碼實際上比讓另一個開發人員等待一段時間進行程式碼審查*更*貴重。
 
 There is one time where the consideration of personal velocity trumps team
 velocity. **If you are in the middle of a focused task, such as writing code,
@@ -64,7 +64,7 @@ after being interrupted. So interrupting yourself while coding is actually
 *more* expensive to the team than making another developer wait a bit for a code
 review.
 
-相反的，等待你工作的斷點再回應請求進行審查。斷點可能是你目前的編碼任務完成後、午餐後、從會議回來後或是從休息室回來後等等。
+相反的，等待你工作的斷點再回應請求進行審查。斷點可能是你目前的撰寫程式碼任務完成後、午餐後、從會議回來後或是從休息室回來後等等。
 
 Instead, wait for a break point in your work before you respond to a request for
 review. This could be when your current coding task is completed, after lunch,
@@ -96,7 +96,7 @@ suggest other reviewers who might be able to respond more quickly, or
 you should interrupt coding even to send a response like this&mdash;send the
 response at a reasonable break point in your work.)
 
-重要的是，評審花足夠的時間進行評審，以確保他們的 "LGTM" 意味著 "這個程式碼符合[我們的標準](standard.md)"。然而，個別回應仍然理想的應是[快速的](#fast)。
+重要的是，審查者花足夠的時間進行審查，以確保他們的 "LGTM" 意味著 "這個程式碼符合[我們的標準](standard.md)"。然而，個別回應仍然理想的應是[快速的](#fast)。
 
 **It is important that reviewers spend enough time on review that they are
 certain their "LGTM" means "this code meets [our standards](standard.md)."**
@@ -132,7 +132,7 @@ comments on the CL. This is done when either:
 The reviewer should specify which of these options they intend, if it is not
 otherwise clear.
 
-當開發者得到 "LGTM, Approval" 需要等待整整一天時，LGTM 帶有評論的功能尤其值得考慮，特別是當開發者和評審人員位於不同的時區時。
+當開發者得到 "LGTM, Approval" 需要等待整整一天時，LGTM 帶有評論的功能尤其值得考慮，特別是當開發者和審查者位於不同的時區時。
 
 LGTM With Comments is especially worth considering when the developer and
 reviewer are in different time zones and otherwise the developer would be
@@ -150,7 +150,7 @@ each other, instead of one huge CL that has to be reviewed all at once. This is
 usually possible and very helpful to reviewers, even if it takes additional work
 from the developer.
 
-如果一個 CL 不能被分成更小的 CL，而且你沒有時間快速檢閱整個 CL，那麼至少對 CL 的整體設計寫一些註解，並將其送回開發人員進行改進。作為審查人員，你的目標之一應該是始終讓開發人員解除障礙或使他們能夠快速進行某些進一步的操作，而不犧牲程式碼的健康狀態。
+如果一個 CL 不能被分成更小的 CL，而且你沒有時間快速檢閱整個 CL，那麼至少對 CL 的整體設計寫一些註解，並將其送回開發人員進行改進。作為審查者，你的目標之一應該是始終讓開發人員解除障礙或使他們能夠快速進行某些進一步的操作，而不犧牲程式碼的健康狀態。
 
 If a CL *can't* be broken up into smaller CLs, and you don't have time to review
 the entire thing quickly, then at least write some comments on the overall

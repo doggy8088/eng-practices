@@ -72,7 +72,7 @@ helpful. The primary goal of code review is to get the best CL possible. A
 secondary goal is improving the skills of developers so that they require less
 and less review over time.
 
-請記住，人們學習的方式不僅是從改進之處，也有從他們做得好的地方進行強化。如果您在程式碼上看到您喜歡的地方，也請提供評論！例如：開發人員整理了混亂的演算法，新增了出色的測試覆蓋率，或者是您作為審閱者從程式碼中學到了東西。與所有評論一樣，請說明您為什麼喜歡某些部分，進一步鼓勵開發人員繼續使用良好的做法。
+請記住，人們學習的方式不僅是從改進之處，也有從他們做得好的地方進行強化。如果您在程式碼上看到您喜歡的地方，也請提供評論！例如：開發人員整理了混亂的演算法，新增了出色的測試覆蓋率，或者是您作為審查者從程式碼中學到了東西。與所有評論一樣，請說明您為什麼喜歡某些部分，進一步鼓勵開發人員繼續使用良好的做法。
 
 Remember that people learn from reinforcement of what they are doing well and
 not just what they could do better. If you see things you like in the CL,
