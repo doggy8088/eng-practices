@@ -11,7 +11,7 @@ designed to this end.
 
 In order to accomplish this, a series of trade-offs have to be balanced.
 
-首先，開發人員必須能夠在他們的任務上「取得進展」。如果您從未提交代碼庫的改進，則代碼庫永遠不會得到改進。此外，如果審閱者讓「任何」更改都變得非常困難，那麼開發人員將不會有動力在未來進行改進。
+首先，開發人員必須能夠在他們的任務上「取得進展」。如果您從未提交代碼庫的改進，則代碼庫永遠不會得到改進。此外，如果審查者讓「任何」更改都變得非常困難，那麼開發人員將不會有動力在未來進行改進。
 
 First, developers must be able to _make progress_ on their tasks. If you never
 submit an improvement to the codebase, then the codebase never improves. Also,
@@ -49,7 +49,7 @@ being worked on, even if the CL isn't perfect.**
 
 That is _the_ senior principle among all of the code review guidelines.
 
-當然，這也有限制。例如，如果一個 CL 增加了一個特性，而審查人員不想要這個特性，即使程式碼設計很好，審查人員仍可以否決批准。
+當然，這也有限制。例如，如果一個 CL 增加了一個特性，而審查者不想要這個特性，即使程式碼設計很好，審查者仍可以否決批准。
 
 There are limitations to this, of course. For example, if a CL adds a feature
 that the reviewer doesn't want in their system, then the reviewer can certainly
@@ -66,7 +66,7 @@ _continuous improvement_. A CL that, as a whole, improves the maintainability,
 readability, and understandability of the system shouldn't be delayed for days
 or weeks because it isn't "perfect."
 
-審查人員應該始終可以隨意留下評論，表達某些方面可以更好，但如果這不是非常重要的話，可以在前面加上 "Nit:" 之類的字眼，讓作者知道這只是值得注意的細節，可以選擇忽略。
+審查者應該始終可以隨意留下評論，表達某些方面可以更好，但如果這不是非常重要的話，可以在前面加上 "Nit:" 之類的字眼，讓作者知道這只是值得注意的細節，可以選擇忽略。
 
 Reviewers should _always_ feel free to leave comments expressing that something
 could be better, but if it's not very important, prefix it with something like
@@ -133,7 +133,7 @@ this document and the other documents in
 [The CL Author's Guide](../developer/index.md) and this
 [Reviewer Guide](index.md).
 
-當達成共識變得特別困難時，與其僅透過程式碼審查意見試圖解決衝突，與評審者和作者進行面對面會議或視訊會議可能有所幫助。（如果您這麼做了，請務必記錄討論結果，作為未來讀者的意見。）
+當達成共識變得特別困難時，與其僅透過程式碼審查意見試圖解決衝突，與審查者和作者進行面對面會議或視訊會議可能有所幫助。（如果您這麼做了，請務必記錄討論結果，作為未來讀者的意見。）
 
 When coming to consensus becomes especially difficult, it can help to have a
 face-to-face meeting or a video conference between the reviewer and the author, instead of

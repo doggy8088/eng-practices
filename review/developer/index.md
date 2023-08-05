@@ -6,6 +6,6 @@ The pages in this section contain best practices for developers going through co
 
 - [撰寫良好的 CL 描述 (Writing Good CL Descriptions)](cl-descriptions.md)
 - [小的變更清單 (Small CLs)](small-cls.md)
-- [如何處理審稿人意見 (How to Handle Reviewer Comments)](handling-comments.md)
+- [如何處理審查者意見 (How to Handle Reviewer Comments)](handling-comments.md)
 
 參見 [如何進行程式碼審查](../reviewer/index.md)，該篇文章提供了審查者的詳細指導。
