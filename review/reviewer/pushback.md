@@ -8,7 +8,7 @@ general.
 
 ## 誰是對的？ (Who is right?) {#who_is_right}
 
-當開發人員不同意您的建議時，請花些時間去考慮一下他們是不是正確的。通常，他們比您更接近程式碼，因此他們可能對其中某些方面有更好的洞見。他們的論點是否有道理？從代碼健康度的角度來看是否合理？如果是，讓他們知道他們是對的，然後就讓問題解決。
+當開發人員不同意您的建議時，請花些時間去考慮一下他們是不是正確的。通常，他們比您更接近程式碼，因此他們可能對其中某些方面有更好的洞見。他們的論點是否有道理？從程式碼健康度的角度來看是否合理？如果是，讓他們知道他們是對的，然後就讓問題解決。
 
 When a developer disagrees with your suggestion, first take a moment to consider
 if they are correct. Often, they are closer to the code than you are, and so
@@ -38,7 +38,7 @@ the developer know that you *hear* what they're saying, you just don't *agree*.
 
 ## 惹惱開發人員 (Upsetting Developers) {#upsetting_developers}
 
-有些審查者認為，如果審查者堅持改進，開發人員會感到不悅。有時開發人員確實會感到不悅，但這種情況通常很短暫，之後他們會非常感謝你幫助他們提高程式碼品質。通常，如果您在評論中很[有禮貌](comments.md#courtesy)，開發人員實際上根本不會感到不悅，這種擔憂只存在於審查者的腦海中。擾動通常更多地與評論的[撰寫方式](comments.md#courtesy)有關，而不是與審查者對代碼品質的堅持。
+有些審查人員認為，如果審查者堅持改進，開發人員會感到不悅。有時開發人員確實會感到不悅，但這種情況通常很短暫，之後他們會非常感謝你幫助他們提高程式碼品質。通常，如果您在評論中很[有禮貌](comments.md#courtesy)，開發人員實際上根本不會感到不悅，這種擔憂只存在於審查人員的腦海中。擾動通常更多地與評論的[撰寫方式](comments.md#courtesy)有關，而不是與審查者對程式碼品質的堅持。
 
 Reviewers sometimes believe that the developer will be upset if the reviewer
 insists on an improvement. Sometimes developers do become upset, but it is
@@ -51,7 +51,7 @@ insistence on code quality.
 
 ## 後續清理 (Cleaning It Up Later) {#later}
 
-開發人員常常抱怨的原因是他們想要快速完成任務，並不願意再經歷一次審查才能提交程式碼。他們會承諾稍後會清理程式碼並呈現新的版本。然而，經驗告訴我們，隨著時間的推移，開發人員清理程式碼的意願將會下降。除非開發人員在提交程式碼後立即進行清理，否則這些問題通常都不會得到解決。這不是因為開發人員不負責任，而是因為他們有太多其他工作需要處理，清理工作往往會被遺忘。因此，在程式碼被提交到代碼庫之前，強烈建議要求開發人員現在就清理他們的程式碼，而不是以後再說。讓人們「稍後再整理程式碼」是程式碼庫失陷的常見方式。
+開發人員常常抱怨的原因是他們想要快速完成任務，並不願意再經歷一次審查才能提交程式碼。他們會承諾稍後會清理程式碼並呈現新的版本。然而，經驗告訴我們，隨著時間的推移，開發人員清理程式碼的意願將會下降。除非開發人員在提交程式碼後立即進行清理，否則這些問題通常都不會得到解決。這不是因為開發人員不負責任，而是因為他們有太多其他工作需要處理，清理工作往往會被遺忘。因此，在程式碼被提交到程式碼庫之前，強烈建議要求開發人員現在就清理他們的程式碼，而不是以後再說。讓人們「稍後再整理程式碼」是程式碼庫失陷的常見方式。
 
 A common source of push back is that developers (understandably) want to get
 things done. They don't want to go through another round of review just to get

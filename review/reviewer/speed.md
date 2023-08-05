@@ -36,7 +36,7 @@ When code reviews are slow, several things happen:
 
 ## 程式碼審查應該有多快？ (How Fast Should Code Reviews Be?) {#fast}
 
-如果你當下沒有在進行專注的工作，**當代碼回饋回來後，你應該儘快進行程式碼檢閱。**
+如果你當下沒有在進行專注的工作，**當程式碼回饋回來後，你應該儘快進行程式碼檢閱。**
 
 If you are not in the middle of a focused task, **you should do a code review
 shortly after it comes in.**
@@ -161,7 +161,7 @@ so.
 
 ## 逐漸改善的程式碼審查 (Code Review Improvements Over Time) {#time}
 
-如果你遵循這些準則，並且在程式碼審查方面嚴格要求自己，你會發現整個程式碼審查過程隨著時間的推移越來越快。開發人員會學習有關代碼健康所需的標準，並向您傳送從一開始就很出色的 CL，需要越來越少的審查時間。審查者學會了快速響應，並使審查過程不增加不必要的延遲。但是，請不要為了加快速度而妥協於[程式碼審查標準](standard.md)或質量的虛幻改善。長遠來看，這實際上並不會使任何事情發生得更快。
+如果你遵循這些準則，並且在程式碼審查方面嚴格要求自己，你會發現整個程式碼審查過程隨著時間的推移越來越快。開發人員會學習有關程式碼健康所需的標準，並向您傳送從一開始就很出色的 CL，需要越來越少的審查時間。審查人員學會了快速響應，並使審查過程不增加不必要的延遲。但是，請不要為了加快速度而妥協於[程式碼審查標準](standard.md)或質量的虛幻改善。長遠來看，這實際上並不會使任何事情發生得更快。
 
 If you follow these guidelines and you are strict with your code reviews, you
 should find that the entire code review process tends to go faster and faster

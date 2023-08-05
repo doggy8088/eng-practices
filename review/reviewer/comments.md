@@ -31,7 +31,7 @@ saying something that might otherwise be upsetting or contentious. For example:
 Bad: "Why did **you** use threads here when there's obviously no benefit to be
 gained from concurrency?"
 
-好的："這裡的併發模型正在增加系統的複雜度，但我沒有看到任何實際的效能收益。由於沒有效能收益，最好讓此代碼成為單執行緒，而不是使用多執行緒。"
+好的："這裡的併發模型正在增加系統的複雜度，但我沒有看到任何實際的效能收益。由於沒有效能收益，最好讓此程式碼成為單線程，而不是使用多執行緒。"
 
 Good: "The concurrency model here is adding complexity to the system without any
 actual performance benefit that I can see. Because there's no performance
@@ -116,7 +116,7 @@ comments are merely intended to be informational or optional.
 
 ## 接受解釋 (Accepting Explanations) {#explanations}
 
-如果您要求開發人員解釋您不瞭解的一段程式碼，通常應該導致他們更清晰地**重寫程式碼**。偶爾，在程式碼中新增註解也是一種適當的反應，只要不僅僅是解釋過於複雜的代碼。
+如果您要求開發人員解釋您不瞭解的一段程式碼，通常應該導致他們更清晰地**重寫程式碼**。偶爾，在程式碼中新增注釋也是一種適當的反應，只要不僅僅是解釋過於複雜的程式碼。
 
 If you ask a developer to explain a piece of code that you don't understand,
 that should usually result in them **rewriting the code more clearly**.

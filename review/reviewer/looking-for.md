@@ -24,7 +24,7 @@ for the users of this code? The "users" are usually both end-users (when they
 are affected by the change) and developers (who will have to "use" this code in
 the future).
 
-通常，我們期望開發人員在程式碼測試完成後再進行代碼審查。然而，作為審查者，你仍應該考慮邊緣情況、尋找並發問題、以用戶的角度思考，且確保在讀取代碼時並未發現任何錯誤。
+通常，我們期望開發人員在程式碼測試完成後再進行程式碼審查。然而，作為審查者，你仍應該考慮邊緣情況、尋找並發問題、以用戶的角度思考，且確保在讀取程式碼時並未發現任何錯誤。
 
 Mostly, we expect developers to test CLs well-enough that they work correctly by
 the time they get to code review. However, as the reviewer you should still be
@@ -41,7 +41,7 @@ you're just reading the code. For changes like that, you can have the developer
 give you a demo of the functionality if it's too inconvenient to patch in the CL
 and try it yourself.
 
-另一個需要在程式碼審查中特別考慮功能性的時間是，如果在 CL 中存在某種**並行程式設計**，理論上可能會導致死鎖或競態條件。這些問題通常很難僅透過運行代碼就檢測到，通常需要開發人員和審查者仔細思考，以確保沒有引入問題。(請注意，這也是不使用可能存在競態條件或死鎖的並發模型的一個很好的理由 - 它可能會使代碼審查或理解程式碼變得非常複雜。)
+另一個需要在程式碼審查中特別考慮功能性的時間是，如果在 CL 中存在某種**並行程式設計**，理論上可能會導致死鎖或競態條件。這些問題通常很難僅透過運行程式碼就檢測到，通常需要開發人員和審查人員仔細思考，以確保沒有引入問題。(請注意，這也是不使用可能存在競態條件或死鎖的並發模型的一個很好的理由 - 它可能會使程式碼審查或理解程式碼變得非常複雜。)
 
 Another time when it's particularly important to think about functionality
 during a code review is if there is some sort of **parallel programming** going
@@ -55,7 +55,7 @@ understand the code.)
 
 ## 複雜度 (Complexity)
 
-變更清單是否比它應該的複雜？在每個層面上檢查，逐行檢查是否太複雜？函式是否太複雜？類別是否太複雜？「太複雜」通常意味著「程式碼讀者無法快速理解」。它也可以意味著「當開發人員嘗試呼叫或修改此代碼時，很可能會引入錯誤。」
+變更清單是否比它應該的複雜？在每個層面上檢查，逐行檢查是否太複雜？函式是否太複雜？類別是否太複雜？「太複雜」通常意味著「程式碼讀者無法快速理解」。它也可以意味著「當開發人員嘗試呼叫或修改此程式碼時，很可能會引入錯誤。」
 
 Is the CL more complex than it should be? Check this at every level of the
 CL—are individual lines too complex? Are functions too complex? Are classes too
@@ -63,7 +63,7 @@ complex? "Too complex" usually means **"can't be understood quickly by code
 readers."** It can also mean **"developers are likely to introduce bugs when
 they try to call or modify this code."**
 
-一種特定的複雜度是**過度設計**，開發人員使代碼更通用，或新增系統目前不需要的功能。審查者應特別注意過度工程。鼓勵開發人員解決他們現在知道需要解決的問題，而不是開發人員推測*未來*可能需要解決的問題。未來的問題應該在它到來並且您可以在物理宇宙中看到其實際形狀和要求時解決。
+一種特定的複雜度是**過度設計**，開發人員使程式碼更通用，或新增系統目前不需要的功能。評審者應特別注意過度工程。鼓勵開發人員解決他們現在知道需要解決的問題，而不是開發人員推測*未來*可能需要解決的問題。未來的問題應該在它到來並且您可以在物理宇宙中看到其實際形狀和要求時解決。
 
 A particular type of complexity is **over-engineering**, where developers have
 made the code more generic than it needs to be, or added functionality that
@@ -76,7 +76,7 @@ universe.
 
 ## 測試 (Tests)
 
-根據需求要求進行單元、整合或端對端測試。一般而言，測試應與生產代碼在同一變更清單中新增，除非該變更清單處理緊急情況。
+根據需求要求進行單元、整合或端對端測試。一般而言，測試應與生產程式碼在同一變更清單中新增，除非該變更清單處理緊急情況。
 
 Ask for unit, integration, or end-to-end
 tests as appropriate for the change. In general, tests should be added in the
@@ -89,7 +89,7 @@ Make sure that the tests in the CL are correct, sensible, and useful. Tests do
 not test themselves, and we rarely write tests for our tests—a human must ensure
 that tests are valid.
 
-當代碼錯誤時，測試會實際失敗嗎？如果程式碼在它們下面變更，它們是否會開始產生錯誤陽性？每個測試是否提出簡單有效的斷言？測試是否在不同的測試方法之間適當地分離？
+當程式碼錯誤時，測試會實際失敗嗎？如果程式碼在它們下面變更，它們是否會開始產生錯誤陽性？每個測試是否提出簡單有效的斷言？測試是否在不同的測試方法之間適當地分離？
 
 Will the tests actually fail when the code is broken? If the code changes
 beneath them, will they start producing false positives? Does each test make
@@ -111,7 +111,7 @@ becomes hard to read.
 
 ## 註解 (Comments)
 
-這位開發人員是否使用易懂的英文書寫清晰的註解？所有的註解是否都是必要的？通常當註解解釋了程式碼存在的原因時就很有用，而不是解釋程式碼在做什麼。如果程式碼本身並不清晰，那麼就應該簡化代碼。也有一些例外情況（例如常規表達式和複雜演算法通常受益於解釋其操作的註解），但大多數註解都是提供程式碼本身所不能包含的資訊，比如決策背後的原因。
+這位開發人員是否使用易懂的英文書寫清晰的註解？所有的註解是否都是必要的？通常當註解解釋了程式碼存在的原因時就很有用，而不是解釋程式碼在做什麼。如果程式碼本身並不清晰，那麼就應該簡化程式碼。也有一些例外情況（例如常規表達式和複雜演算法通常受益於解釋其操作的註解），但大多數註解都是提供程式碼本身所不能包含的資訊，比如決策背後的原因。
 
 Did the developer write clear comments in understandable English? Are all of the
 comments actually necessary? Usually comments are useful when they **explain
@@ -198,7 +198,7 @@ missing, ask for it.
 
 ## 每一行 (Every Line) {#every-line}
 
-通常情況下，應檢視您被指定審查的*每行*程式碼。像資料檔案、產生的程式碼或大型資料結構這樣的東西有時可以掃描，但不要掃描人寫的類、函式或代碼塊，並假設其中的內容沒有問題。顯然，某些程式碼比其他程式碼更需要仔細檢查-這是您必須做出的判斷-但您至少應確保您*理解*所有程式碼的運作方式。
+通常情況下，應檢視您被指定審查的*每行*程式碼。像資料檔案、產生的程式碼或大型資料結構這樣的東西有時可以掃描，但不要掃描人寫的類、函式或程式碼塊，並假設其中的內容沒有問題。顯然，某些程式碼比其他程式碼更需要仔細檢查-這是您必須做出的判斷-但您至少應確保您*理解*所有程式碼的運作方式。
 
 In the general case, look at *every* line of code that you have been assigned to
 review. Some things like data files, generated code, or large data structures
@@ -253,7 +253,7 @@ reached the desired state.
 
 ## 背景說明 (Context)
 
-通常，在廣泛的背景下檢視變更清單會很有幫助。通常，程式碼審查工具僅會顯示正在更改部分周圍的幾行代碼。有時您需要檢視整個檔案以確保更改實際上是有意義的。例如，您可能只會看到新增了四行新代碼，但當您檢視整個檔案時，您會發現這四行程式碼實際上位於一個50行的方法中，現在真正需要將其拆分為較小的方法。
+通常，在廣泛的背景下檢視變更清單會很有幫助。通常，程式碼審查工具僅會顯示正在更改部分周圍的幾行程式碼。有時您需要檢視整個檔案以確保更改實際上是有意義的。例如，您可能只會看到新增了四行新的程式碼，但當您檢視整個檔案時，您會發現這四行程式碼實際上位於一個50行的方法中，現在真正需要將其拆分為較小的方法。
 
 It is often helpful to look at the CL in a broad context. Usually the code
 review tool will only show you a few lines of code around the parts that are
@@ -286,7 +286,7 @@ tell a developer what they did right than to tell them what they did wrong.
 在進行程式碼審查時，您應該確保：
 
 * 程式碼設計良好。
-* 功能對代碼使用者很好。
+* 功能對程式碼使用者很好。
 * 任何 UI 更改都是明智的並且看起來很好。
 * 任何平行程式設計都是安全的。
 * 程式碼沒有比它需要的更複雜。

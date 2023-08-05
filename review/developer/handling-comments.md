@@ -44,7 +44,7 @@ appropriate.
 
 ## 修正程式碼 (Fix the Code) {#code}
 
-如果審查者表示無法理解您的程式碼，您應該首先澄清程式碼本身。如果程式碼無法澄清，則新增一個代碼註解來解釋代碼存在的原因。如果評論似乎毫無意義，那麼您的回應應該是在程式碼審查工具中進行解釋。
+如果審查人員表示無法理解您的程式碼，您應該首先澄清程式碼本身。如果程式碼無法澄清，則新增一個程式碼註解來解釋程式碼存在的原因。如果評論似乎毫無意義，那麼您的回應應該是在程式碼審查工具中進行解釋。
 
 If a reviewer says that they don't understand something in your code, your first
 response should be to clarify the code itself. If the code can't be clarified,
