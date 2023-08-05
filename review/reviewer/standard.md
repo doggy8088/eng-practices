@@ -11,14 +11,14 @@ designed to this end.
 
 In order to accomplish this, a series of trade-offs have to be balanced.
 
-首先，開發人員必須能夠在他們的任務上「取得進展」。如果您從未提交代碼庫的改進，則代碼庫永遠不會得到改進。此外，如果審閱者讓「任何」更改都變得非常困難，那麼開發人員將不會有動力在未來進行改進。
+首先，開發人員必須能夠在他們的任務上「取得進展」。如果您從未提交程式碼庫的改進，則程式碼庫永遠不會得到改進。此外，如果審閱者讓「任何」更改都變得非常困難，那麼開發人員將不會有動力在未來進行改進。
 
 First, developers must be able to _make progress_ on their tasks. If you never
 submit an improvement to the codebase, then the codebase never improves. Also,
 if a reviewer makes it very difficult for _any_ change to go in, then developers
 are disincentivized to make improvements in the future.
 
-另一方面，審查者的責任是確保每個 CL 都有如此高的品質，以便其程式碼庫的整體程式碼健康狀況不會隨著時間而降低。這可能很棘手，因為通常情況下，程式碼庫隨著時間的推移會因代碼健康程度的微小下降而退化，特別是當團隊面臨重要時間限制，他們覺得必須採取捷徑以實現目標時，情況更為如此。
+另一方面，審查者的責任是確保每個 CL 都有如此高的品質，以便其程式碼庫的整體程式碼健康狀況不會隨著時間而降低。這可能很棘手，因為通常情況下，程式碼庫隨著時間的推移會因程式碼健康程度的微小下降而退化，特別是當團隊面臨重要時間限制，他們覺得必須採取捷徑以實現目標時，情況更為如此。
 
 On the other hand, it is the duty of the reviewer to make sure that each CL is
 of such a quality that the overall code health of their codebase is not
@@ -73,7 +73,7 @@ could be better, but if it's not very important, prefix it with something like
 "Nit: " to let the author know that it's just a point of polish that they could
 choose to ignore.
 
-註：此文檔中沒有任何內容可以證明提交明顯惡化系統整體代碼健康狀況（CLs）的行為是正當的。唯一可以這樣做的情況是在[緊急情況](../emergencies.md)下。
+註：此文檔中沒有任何內容可以證明提交明顯惡化系統整體程式碼健康狀況（CLs）的行為是正當的。唯一可以這樣做的情況是在[緊急情況](../emergencies.md)下。
 
 Note: Nothing in this document justifies checking in CLs that definitely
 _worsen_ the overall code health of the system. The only time you would do that
@@ -81,7 +81,7 @@ would be in an [emergency](../emergencies.md).
 
 ## 導師指導 (Mentoring)
 
-程式碼審查可以扮演一個教導開發者學習語言、框架或一般軟體設計原則的重要角色。留下有幫助開發者學習新知的評論始終是可以的。分享知識是改善系統代碼健康狀態的重要部分。但請記住，如果您的評論僅僅是教育性的，但不是必須符合本文件所描述的標準，請在前面加上“Nit:”或以其他方式表明它對於作者解決這個以修復問題不是必要的。
+程式碼審查可以扮演一個教導開發者學習語言、框架或一般軟體設計原則的重要角色。留下有幫助開發者學習新知的評論始終是可以的。分享知識是改善系統程式碼健康狀態的重要部分。但請記住，如果您的評論僅僅是教育性的，但不是必須符合本文件所描述的標準，請在前面加上“Nit:”或以其他方式表明它對於作者解決這個以修復問題不是必要的。
 
 Code review can have an important function of teaching developers something new
 about a language, a framework, or general software design principles. It's

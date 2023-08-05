@@ -21,7 +21,7 @@ locate your CL.
 - 以命令的形式書寫完整的句子。(Complete sentence, written as though it was an order.)
 - 空一行。(Follow by empty line.)
 
-CL 的第一行描述應該是關於 CL 詳細做了什麼的短摘要，接著是空白行。這是出現在版本控制歷史總結的內容，因此它應該提供足夠的資訊，讓未來的程式碼搜尋者不必閱讀您的 CL 或整個描述，就可以理解您的 CL 實際上做了什麼或者它如何與其他 CL 不同。換句話說，第一行應該獨立存在，讓讀者能夠更快地瀏覽代碼歷史。
+CL 的第一行描述應該是關於 CL 詳細做了什麼的短摘要，接著是空白行。這是出現在版本控制歷史總結的內容，因此它應該提供足夠的資訊，讓未來的程式碼搜尋者不必閱讀您的 CL 或整個描述，就可以理解您的 CL 實際上做了什麼或者它如何與其他 CL 不同。換句話說，第一行應該獨立存在，讓讀者能夠更快地瀏覽程式碼歷史。
 
 The **first line** of a CL description should be a short summary of
 *specifically* **what** *is being done by the CL*, followed by a blank line.
@@ -74,7 +74,7 @@ Even small CLs deserve a little attention to detail. Put the CL in context.
 
 - "修正建置。"
 - "新增補丁。"
-- "將代碼從 A 移動到 B。"
+- "將程式碼從 A 移動到 B。"
 - "第一階段。"
 - "新增方便的函式。"
 - "刪除奇怪的 URL。"

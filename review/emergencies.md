@@ -86,7 +86,7 @@ Most deadlines are soft deadlines, not hard deadlines. They represent a desire
 for a feature to be done by a certain time. They are important, but you
 shouldn't be sacrificing code health to make them.
 
-如果您的發佈週期很長（數週），為了在下一個週期之前將功能新增到代碼中，可能會有一些妥協代碼審查品質的誘惑。然而，如果重複此模式，專案積累的技術債務會變得很難處理。如果開發人員經常在週期接近結束時提交必須加入的 CL，卻只進行了表面上的審查，那麼團隊應修改其流程，使大型功能更改在週期初期完成，並有足夠的時間進行良好的審查。
+如果您的發佈週期很長（數週），為了在下一個週期之前將功能新增到程式碼中，可能會有一些妥協程式碼審查品質的誘惑。然而，如果重複此模式，專案積累的技術債務會變得很難處理。如果開發人員經常在週期接近結束時提交必須加入的 CL，卻只進行了表面上的審查，那麼團隊應修改其流程，使大型功能更改在週期初期完成，並有足夠的時間進行良好的審查。
 
 If you have a long release cycle (several weeks) it can be tempting to sacrifice
 code review quality to get a feature in before the next cycle. However, this

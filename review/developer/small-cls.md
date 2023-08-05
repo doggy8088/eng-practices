@@ -141,7 +141,7 @@ proto CL before the code CL, but they can both be reviewed simultaneously. If
 you do this, you might want to inform both sets of reviewers about the other CL
 that you wrote, so that they have context for your changes.
 
-另一個例子：您傳送一個 CL 進行代碼變更，另一個 CL 用於使用該代碼的配置或實驗；如果必要，這也更容易復原，因為配置/實驗檔案有時會比代碼變更更快地推送到生產環境。
+另一個例子：您傳送一個 CL 進行程式碼變更，另一個 CL 用於使用該程式碼的配置或實驗；如果必要，這也更容易復原，因為配置/實驗檔案有時會比程式碼變更更快地推送到生產環境。
 
 Another example: you send one CL for a code change and another for the
 configuration or experiment that uses that code; this is easier to roll back
@@ -156,7 +156,7 @@ Consider creating shared code or stubs that help isolate changes between layers
 of the tech stack. This not only helps expedite development but also encourages
 abstraction between layers.
 
-例如：您使用客戶端、API、服務和資料模型層建立了一個計算機應用程式。共享的 proto 簽名可以抽象出服務和資料模型層。同樣，API 存根可以將客戶端代碼的實現與服務代碼分離開來，使它們能夠獨立前進。類似的想法也可以應用於更細粒度的函式或類別層級的抽象。
+例如：您使用客戶端、API、服務和資料模型層建立了一個計算機應用程式。共享的 proto 簽名可以抽象出服務和資料模型層。同樣，API 存根可以將客戶端程式碼的實現與服務程式碼分離開來，使它們能夠獨立前進。類似的想法也可以應用於更細粒度的函式或類別層級的抽象。
 
 For example: You created a calculator app with client, API, service, and data
 model layers. A shared proto signature can abstract the service and data model
@@ -167,7 +167,7 @@ abstractions.
 
 ### 垂直分割 (Splitting Vertically) {#splitting-vertically}
 
-與分層、水平方法不同，您可以將代碼分解為較小的、全棧、垂直特性。這些特性中的每一個都可以是獨立的並行實現軌道。這使得一些軌道可以前進，而其他軌道正在等待審查或反饋。
+與分層、水平方法不同，您可以將程式碼分解為較小的、全棧、垂直特性。這些特性中的每一個都可以是獨立的並行實現軌道。這使得一些軌道可以前進，而其他軌道正在等待審查或反饋。
 
 Orthogonal to the layered, horizontal approach, you can instead break down your
 code into smaller, full-stack, vertical features. Each of these features can be
