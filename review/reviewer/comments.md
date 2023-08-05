@@ -31,7 +31,7 @@ saying something that might otherwise be upsetting or contentious. For example:
 Bad: "Why did **you** use threads here when there's obviously no benefit to be
 gained from concurrency?"
 
-好的："這裡的併發模型正在增加系統的複雜度，但我沒有看到任何實際的效能收益。由於沒有效能收益，最好讓此代碼成為單線程，而不是使用多執行緒。"
+好的："這裡的併發模型正在增加系統的複雜度，但我沒有看到任何實際的效能收益。由於沒有效能收益，最好讓此代碼成為單執行緒，而不是使用多執行緒。"
 
 Good: "The concurrency model here is adding complexity to the system without any
 actual performance benefit that I can see. Because there's no performance
