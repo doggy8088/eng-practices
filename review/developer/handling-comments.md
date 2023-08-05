@@ -8,7 +8,7 @@ about handling reviewer comments.
 
 ## 不要把它當成個人攻擊 (Don't Take it Personally) {#personal}
 
-審查的目標是維護我們程式庫和產品的品質。當審查者對您的程式碼提出評論時，請把這視為他們試圖幫助您、程式庫和 Google，而不是對您或您的能力的個人攻擊。
+審查的目標是維護我們程式碼庫和產品的品質。當審查者對您的程式碼提出評論時，請把這視為他們試圖幫助您、程式碼庫和 Google，而不是對您或您的能力的個人攻擊。
 
 The goal of review is to maintain the quality of our codebase and our products.
 When a reviewer provides a critique of your code, think of it as their attempt
@@ -105,7 +105,7 @@ ways to collaborate: ask for clarifications, discuss pros/cons, and provide
 explanations of why your method of doing things is better for the codebase,
 users, and/or Google.
 
-有時候，你可能會對使用者、程式碼庫或該項 CL 的情況有更多瞭解，而審查者可能尚未瞭解的內容。如適當地[修正程式碼](#code)，並透過討論與分享更多背景資訊來與審查者互動。通常，你可以基於技術事實與審查者達成共識。
+有時候，你可能會對使用者、程式碼庫(codebase)或該項 CL 的情況有更多瞭解，而評審者可能尚未瞭解的內容。如適當地[修正程式碼](#code)，並透過討論與分享更多背景資訊來與評審者互動。通常，你可以基於技術事實與評審者達成共識。
 
 Sometimes, you might know something about the users, codebase, or CL that the
 reviewer doesn't know. [Fix the code](#code) where appropriate, and engage your
