@@ -116,7 +116,7 @@ comments are merely intended to be informational or optional.
 
 ## 接受解釋 (Accepting Explanations) {#explanations}
 
-如果您要求開發人員解釋您不瞭解的一段程式碼，通常應該導致他們更清晰地**重寫程式碼**。偶爾，在程式碼中新增注釋也是一種適當的反應，只要不僅僅是解釋過於複雜的代碼。
+如果您要求開發人員解釋您不瞭解的一段程式碼，通常應該導致他們更清晰地**重寫程式碼**。偶爾，在程式碼中新增註解也是一種適當的反應，只要不僅僅是解釋過於複雜的代碼。
 
 If you ask a developer to explain a piece of code that you don't understand,
 that should usually result in them **rewriting the code more clearly**.
