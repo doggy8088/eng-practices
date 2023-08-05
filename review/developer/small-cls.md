@@ -10,7 +10,7 @@
 - **在被拒絕時減少浪費的工作。** 如果您編寫了一個龐大的 CL，然後您的審查者說整個方向錯了，那麼您就浪費了很多工作。
 - **更容易合併。** 在大的 CL 上工作需要很長時間，因此當您進行合併操作時會遇到很多衝突，而且您還需要經常進行合併。
 - **更方便設計。** 改進小的變更的設計和程式碼更容易，而詳細修改大變更的所有細節要更困難。
-- **在審查時的阻礙更少。** 傳送自包含的整個變更的部分可以讓您在等待當前 CL 審查時繼續編碼。
+- **在審查時的阻礙更少。** 傳送自包含的整個變更的部分可以讓您在等待當前 CL 審查時繼續撰寫程式碼。
 - **還原更簡單。** 大的 CL 將更有可能觸及在初始 CL 提交和復原 CL 之間被更新的檔案，從而使復原變得更加複雜 (中間的 CL 可能也需要復原)。
 
 Small, simple CLs are:
@@ -102,7 +102,7 @@ immediately.
 
 ## 分割 CLs (Splitting CLs) {#splitting}
 
-當要處理具有潛在相依關係的多個 CL 工作時，通常在開始編碼之前，先從高層次考慮如何分割和組織這些 CL 會很有幫助。
+當要處理具有潛在相依關係的多個 CL 工作時，通常在開始撰寫程式碼之前，先從高層次考慮如何分割和組織這些 CL 會很有幫助。
 
 When starting work that will have multiple CLs with potential dependencies among
 each other, it's often useful to think about how to split and organize those CLs
